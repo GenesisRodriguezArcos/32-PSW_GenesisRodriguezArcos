@@ -36,8 +36,6 @@ public class DescuentoTest {
     }
 
     // Caso 5 (elegido por mí): precio=300, descuento=100% → esperado=0.0
-    // Lo elegí para verificar el caso extremo donde el descuento es total:
-    // el cliente no paga nada y el resultado debe ser exactamente 0.
     @Test
     public void testDescuento100Porciento() {
         double resultado = descuento.calcularPrecioFinal(300, 100);
